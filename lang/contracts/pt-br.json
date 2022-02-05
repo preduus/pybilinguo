@@ -1,0 +1,26 @@
+{
+  "sir": "atenção",
+  "ai": {
+    "abort": ["abortar", "nada não", "deixa pra lá"],
+    "whoareyou": "quem é você",
+    "creator": "pedro",
+    "thankyou": "obrigado",
+    "day": "bom dia",
+    "afternoon": "boa tarde",
+    "night": "boa noite",
+    "howareyou": ["como está você", "como vai você", "como você está"]
+  },
+  "responses": {
+    "sir": "Estou escutando, pode falar.",
+    "abort": "Ok. Se precisar é só chamar.",
+    "creator": "Pedro é um cara espetacular, foi ele quem me criou.",
+    "whoareyou": "Eu sou Pedrete, sou uma IA criada para auxiliar no dia-a-dia do desenvolvedor.",
+    "thankyou": "Eu quem agradeço! Estou aqui pra te ajudar.",
+    "day": "Bom dia",
+    "afternoon": "Boa tarde",
+    "night": "Boa noite",
+    "understand": "Eu não reconheço esse comando.",
+    "howareyou": "Estou muito bem. Espero que você também esteja",
+    "notfound": "Eu não consegui encontrar o que você procura"
+  }
+}

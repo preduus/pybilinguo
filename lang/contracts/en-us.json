@@ -1,0 +1,26 @@
+{
+  "sir": false,
+  "ai": {
+    "abort": ["abort", "nothing"],
+    "whoareyou": "Who are you",
+    "creator": "pedro",
+    "thankyou": ["thanks", "thank you"],
+    "day": "good morning",
+    "afternoon": "good afternoon",
+    "night": "good evening",
+    "howareyou": ["how are you", "how're u"]
+  },
+  "responses": {
+    "sir": "I'm listening, you can speak.",
+    "abort": "Okay. If you need it, just call.",
+    "creator": "Pedro is a spectacular guy, he was the one who raised me.",
+    "whoareyou": "I'm Pedrete, I'm an AI created to assist in the developer's day-to-day.",
+    "thankyou": "I thank you! I'm here to help you.",
+    "day": "Good morning to you too",
+    "afternoon": "Good afternoon to you too",
+    "night": "Good evening to you too",
+    "understand": "I don't recognize this command.",
+    "howareyou": "I'm very well. I hope you are too",
+    "notfound": "I couldn't find what you're looking for"
+  }
+}
