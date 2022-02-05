@@ -1,11 +1,10 @@
 import os
 import sys
 
-import pyaudio
-from gtts import gTTS
-import sounddevice as sd
-from playsound import playsound
 import speech_recognition as sr
+
+from gtts import gTTS
+from playsound import playsound
 
 from lang import Lang
 
