@@ -27,6 +27,7 @@ def get_voice(text, lang=user_language):
 def execute_ai_responses(command: str):
     responses = translations.get("responses")
     if command in responses:
+        print(f"Output: {responses.get(command)}")
         get_voice(responses.get(command))
 
 
@@ -43,6 +44,7 @@ def auto_translate_command(text: str):
     props = translations.get("translate-dest")
     translator = Translator()
     translated = translator.translate(text, dest=props["lang"])
+    print(f"Translated Output: {props['region']} -> {translated.text}")
     get_voice(translated.text, props["region"])
 
 
@@ -76,14 +78,17 @@ def get_speaker_input():
 
 
 def start_ai(text: str):
+    print(f"Input: {text}")
     if translations.get("sir") in text:
         execute_ai_responses("sir")
         input_converted_to_text = get_speaker_input()
+        print(f"Input: {input_converted_to_text}")
         if get_translations_type(input_converted_to_text, translations.get("translate")):
             first_translate = True
             while True:
                 execute_ai_responses("translate" if first_translate else "translate-more")
                 text_to_translate = get_speaker_input()
+                print(f"Translate this: {text_to_translate}")
                 if translations.get("translate-nomore") in text_to_translate:
                     execute_ai_responses("translate-end")
                     break

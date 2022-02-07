@@ -15,11 +15,6 @@
 
 </div>
 
----
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
 
 ## 📝 Table of Contents
 
@@ -66,12 +61,49 @@ $ python ai.py pt-BR
 ```
 Only two languages are supported. pt-BR and en-US.
 
+To activate the AI, just call the configured sir command.
+```json
+{
+  "sir": "olá" // the "olá" value is my activation command
+}
+```
+
+### Auto Translate
+Machine translation mode works according to the presets made in the source language file.
+can be found [here](./lang/contracts)
+
+#### See example videos [here](https://youtube.com/playlist?list=PLnbZn6zK58XGCDGX7o8BPwnvH5blACb1w)
+
+
+To translate from Portuguese to English, these are the settings.
+```json
+{
+  ...
+  "translate": ["traduza", "traduzir"], // Actions available to start translation
+  "translate-nomore": "não",
+  "translate-dest": { // Output sentences language
+    "lang": "en",
+    "region": "en-US"
+  },
+  "responses": { // AI responses
+    ...
+    "translate": "O que você deseja traduzir",
+    "translate-more": "Deseja continuar traduzindo? Pode falar",
+    "translate-end": "Qualquer coisa é só me chamar",
+    ...
+  },
+  ...
+}
+```
+See portuguese contract [pt-BR.json](./lang/contracts/pt-br.json)
+
 
 ## ⛏️ Built Using <a name="built_using"></a>
 
 - [Speech Recognition](https://github.com/Uberi/speech_recognition#readme)
 - [gTTS](https://github.com/pndurette/gTTS)
 - [Playsound](https://github.com/TaylorSMarks/playsound)
+- [GoogleTrans](https://py-googletrans.readthedocs.io/)
 
 ## ✍️ Authors <a name="authors"></a>
 
