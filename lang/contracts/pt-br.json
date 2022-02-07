@@ -1,5 +1,11 @@
 {
-  "sir": "atenção",
+  "sir": "olá",
+  "translate": ["traduza", "traduzir"],
+  "translate-nomore": "não",
+  "translate-dest": {
+    "lang": "en",
+    "region": "en-US"
+  },
   "ai": {
     "abort": ["abortar", "nada não", "deixa pra lá"],
     "whoareyou": "quem é você",
@@ -19,6 +25,9 @@
     "day": "Bom dia",
     "afternoon": "Boa tarde",
     "night": "Boa noite",
+    "translate": "O que você deseja traduzir",
+    "translate-more": "Deseja continuar traduzindo? Pode falar",
+    "translate-end": "Qualquer coisa é só me chamar",
     "understand": "Eu não reconheço esse comando.",
     "howareyou": "Estou muito bem. Espero que você também esteja",
     "notfound": "Eu não consegui encontrar o que você procura"
