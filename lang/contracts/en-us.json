@@ -1,5 +1,11 @@
 {
-  "sir": false,
+  "sir": "hello",
+  "translate": "translate",
+  "translate-nomore": "no",
+  "translate-dest": {
+    "lang": "pt",
+    "region": "pt-BR"
+  },
   "ai": {
     "abort": ["abort", "nothing"],
     "whoareyou": "Who are you",
@@ -19,6 +25,9 @@
     "day": "Good morning to you too",
     "afternoon": "Good afternoon to you too",
     "night": "Good evening to you too",
+    "translate": "What do you want to translate",
+    "translate-more": "Do you want to continue translating? You can talk",
+    "translate-end": "Anything can call me",
     "understand": "I don't recognize this command.",
     "howareyou": "I'm very well. I hope you are too",
     "notfound": "I couldn't find what you're looking for"
