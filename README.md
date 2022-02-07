@@ -62,9 +62,9 @@ $ python ai.py pt-BR
 Only two languages are supported. pt-BR and en-US.
 
 To activate the AI, just call the configured sir command.
-```json
+```json5
 {
-  "sir": "olá" // the "olá" value is my activation command
+  "sir": "olá" //the "olá" value is my activation command
 }
 ```
 
@@ -76,9 +76,9 @@ can be found [here](./lang/contracts)
 
 
 To translate from Portuguese to English, these are the settings.
-```json
+```json5
 {
-  ...
+  //...
   "translate": ["traduza", "traduzir"], // Actions available to start translation
   "translate-nomore": "não",
   "translate-dest": { // Output sentences language
@@ -86,13 +86,13 @@ To translate from Portuguese to English, these are the settings.
     "region": "en-US"
   },
   "responses": { // AI responses
-    ...
+    //...
     "translate": "O que você deseja traduzir",
     "translate-more": "Deseja continuar traduzindo? Pode falar",
     "translate-end": "Qualquer coisa é só me chamar",
-    ...
+    //...
   },
-  ...
+  //...
 }
 ```
 See portuguese contract [pt-BR.json](./lang/contracts/pt-br.json)
